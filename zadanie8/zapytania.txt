@@ -1,0 +1,12 @@
+Zapytanie 1:
+    SELECT imie, nazwisko FROM autorzy
+Zapytanie 2:
+    INSERT INTO czytelnicy(imie,nazwisko,kod) VALUES ('Anna','Michalak','ANMI05')
+Zapytanie 3:
+    SELECT tytul FROM ksiazki 
+    JOIN kategoria ON ksiazki.id_kategoria = kategoria.id
+    WHERE nazwa = 'epika'
+Zapytanie 4:
+    SELECT tytul FROM ksiazki 
+    JOIN wypozyczenia ON ksiazki.id = wypozyczenia.id_ksiazka
+    WHERE id_czytelnik = 3

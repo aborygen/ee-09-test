@@ -1,0 +1,40 @@
+*{
+    font-family: Tahoma;
+}
+.banner, .stopka{
+    background-color: rgb(107, 142, 35);
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+.dane{
+    background-color: rgb(255, 218, 185);
+    padding: 3px;
+}
+.lewy, .prawy, .srodkowy{
+    float: left;
+}
+.footer{
+    clear: both;
+}
+.lewy, .prawy{
+    background-color: rgb(255, 239, 213);
+}
+.srodkowy{
+    text-align: center;
+    background-color: rgb(255, 239, 213);
+}
+h3{
+    text-align: center;
+}
+h3::first-letter{
+    color: green;
+}
+img{
+    width: 100%;
+    height: auto;
+    padding: 7px;
+}
+img:hover{
+    background-color: rgb(255, 218, 185);
+}

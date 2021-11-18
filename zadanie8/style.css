@@ -1,0 +1,37 @@
+.banner{
+  background-color: #18FFA4;
+  height: 50px;
+}
+.left, .right{
+  float: left;
+  background-color: #AEFFCF;
+  height: 550px;
+  width: 30%;
+}
+.main{
+  float: left;
+  background-color: #DDFFCD;
+  height: 550px;
+  width: 40%;
+}
+.footer{
+  clear: both;
+  background-color: #18FFA4;
+  height: 50px;
+  text-align: center;
+}
+ul, li{
+  margin-left: 100px;
+}
+img{
+  margin: 100px;
+}
+form{
+  margin-left: 150px;
+}
+h4{
+  margin-left: 100px;
+}
+h2, h3{
+  text-align: center;
+}

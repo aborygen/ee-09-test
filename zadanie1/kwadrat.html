@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">FIGURY GEOMETRYCZNE I MATEMATYCY</a>
+    </header>
+    <nav>
+        <h3>WYBIERZ FIGURĘ</h3>
+        <ol>
+            <li><a href="kwadrat.html">KWADRAT</a></li>
+            <ul>
+                <li>obwód</li>
+                <li>pole</li>
+            </ul>
+            <li><a href="kolo.html">KOŁO</a></li>
+            <ul>
+                <li>obwód</li>
+                <li>pole</li>
+            </ul>
+        </ol>
+        <h3><a href="baza/matematycy.accdb">BAZA DANYCH</a></h3>
+    </nav>
+    <main>
+        <h1>KWARDAT</h1>
+        Podaj długość boku: <input type="text" id="num">
+        <br>
+        <input type="button" value="licz pole" onclick="pole()">
+        <input type="button" value="licz obwód" onclick="obwod()">
+        <p></p>
+    </main>
+    <footer>
+        Strona stworzona przez: Vojcik
+    </footer>
+    <script>
+        var warn = "Należy wpisać wartość liczbową";
+        function pole(){
+            var a = document.getElementById("num").value;
+            var p = document.querySelector("p");
+            
+            if(a==''){
+                p.innerHTML = warn;
+            }
+            else{
+                if(isNaN(a)){
+                    p.innerHTML = warn;
+                }
+                else{
+                    p.innerHTML = ("P = a<sup>2</sup> = "+(a*a));
+                }
+            }
+        }
+        function obwod(){
+            var a = document.getElementById("num").value;
+            var p = document.querySelector("p");
+            
+            if(a==''){
+                p.innerHTML = warn;
+            }
+            else{
+                if(isNaN(a)){
+                    p.innerHTML = warn;
+                }
+                else{
+                    p.innerHTML = ("Obw = 4a = "+(a*4));
+                }
+            }
+        }
+    </script>
+</body>
+</html>

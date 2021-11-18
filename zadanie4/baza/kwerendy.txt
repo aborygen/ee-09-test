@@ -1,0 +1,12 @@
+zapytanie 1:
+    SELECT id, nazwa, opis, cena FROM podzespoly
+    WHERE cena < 1000
+zapytanie 2:
+    SELECT nazwa, opis FROM podzespoly 
+    WHERE dostepnosc = 1 AND producenci_id = 1
+zapytanie 3:
+    SELECT pod.nazwa, pro.nazwa FROM podzespoly AS pod 
+    JOIN producenci AS pro ON pod.producenci_id = pro.id
+zapytanie 4:
+    UPDATE producenci SET  nazwa = 'PATRIOT'
+    WHERE id = 8

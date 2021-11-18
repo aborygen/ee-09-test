@@ -1,0 +1,33 @@
+body{
+  background-color: rgb(19, 39, 53);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 160%;
+  color: white;
+  text-shadow: 0.07em 0.07em rgba(0, 0, 0, 0.719);
+}
+#container{
+  margin: 100px auto;
+  width: 1300px;
+  min-height: 700px;
+  text-align: center;
+}
+#animals{
+  background-color: gray;
+  width: 100%;
+  min-height: 100px;
+  padding-bottom: 20px;
+}
+#animals img{
+  margin:50px 10px;
+  height: 200px;
+}
+#line{
+  padding: 20px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: dimgray;
+}
+#caption{
+  padding: 20px 0;
+  background:darkslategray;
+}

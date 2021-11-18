@@ -1,0 +1,34 @@
+header{
+  background-color: #1C59A7 !important;
+  color: white;
+  text-align: center;
+  height: 80px;
+}
+#lewy, #srodkowy, #prawy{
+  float: left;
+  width: 33%;
+  height: 200px;
+}
+#lewy{
+  background-color: #3A70B5;
+}
+#srodkowy{
+  background-color: #5A8AC8;
+}
+#prawy, main{
+  text-align: center;
+  background-color: #86ACDD;
+}
+main{
+  clear: both;
+  height: 300px;
+}
+footer{
+  color: white;
+  background-color: #1C59A7;
+}
+#prawy a{
+  background-color: yellow;
+  color: blue;
+  padding: 10px;
+}

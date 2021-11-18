@@ -1,0 +1,40 @@
+nav, main{
+    float: left;
+}
+footer{
+    clear: both;
+}
+ul{
+    list-style-type: square;
+}
+nav{
+    width: 20%;
+    height: 500px;
+}
+main{
+    width:80%;
+}
+header, nav, footer, a{
+    background-color: #63b03c;
+    color: white;
+}
+header{
+    font-family: Arial;
+    font-size: 300%;
+    font-variant: small-caps;
+}
+header, footer{
+    text-align: center;
+}
+p{
+    display: inline-block;
+}
+img{
+    display: none;
+}
+.ko:hover ~ .kolo{
+    display: block !important;
+}
+.kw:hover ~ .kwadrat{
+    display: block !important;
+}
