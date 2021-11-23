@@ -24,8 +24,8 @@
       $qst = mysqli_query($con, $sql);
       while($row = mysqli_fetch_array($qst)){
         echo '<div class ="photo"><img src="'.$row[3].'" alt="przyjaciel"></div>
-              <div class ="desc"><h3>'.$row[0].' '.$row[1].'</h3><p>Ostatni wpis:'.$row[2].'</p></div>
-              <div class ="line"><hr></div>';
+              <div class ="desc"><h3>'.$row[0].' '.$row[1].'</h3><p>Ostatni wpis: '.$row[2].'</p></div>
+              <div class ="line"></div>';
       }
       mysqli_close($con);
     ?>
