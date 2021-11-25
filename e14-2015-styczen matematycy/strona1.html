@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="baner.jpg" alt="baner">
+  </header>
+  <nav>
+    <span>Menu</span>
+    <ul>
+      <li><a href="strona1.html">proste działania</a></li>
+      <li><a href="strona2.php">potęgowanie</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>PROSTE DZIAŁANIA</h1>
+    <i>Podaj pierwszą liczbę: </i> <input type="number" id="a"> <br>
+    <i>Podaj drugą liczbę: </i> <input type="number" id="b"> <br>
+    <button onclick="licz(1)">DODAWANIE</button>
+    <button onclick="licz(2)">ODEJMOWANIE</button>
+    <button onclick="licz(3)">MNOŻENIE</button>
+    <button onclick="licz(4)">DZIELENIE</button>
+    <p></p>
+  </main>
+
+  <script>
+    function licz(dzialanie){
+      const p = document.querySelector('p');
+      const wynik = "Wynik działania wynosi:";
+
+      let a = Number(document.getElementById('a').value);
+      let b = Number(document.getElementById('b').value);
+
+      if(a == '' && b == ''){
+        p.innerHTML = "Proszę uzupełnić obie liczby";
+      }
+      else if(a !== '' && b == '' && dzialanie == 4){
+        p.innerHTML = "Nie wolno dzielić przez zero";
+      }
+      else if(a !== '' && b == ''){
+        if(dzialanie == 1){
+          p.innerHTML = wynik+(a);
+        }
+        else if(dzialanie == 2){
+          p.innerHTML = wynik+(a);
+        }
+        else if(dzialanie == 3){
+          p.innerHTML = wynik+"0";
+        }
+        else if(dzialanie == 4){
+            p.innerHTML = wynik+(a);
+          }
+      }
+      else{
+        if(dzialanie == 1){
+          p.innerHTML = wynik+(a+b);
+        }
+        else if(dzialanie == 2){
+          p.innerHTML = wynik+(a-b);
+        }
+        else if(dzialanie == 3){
+          p.innerHTML = wynik+(a*b);
+        }
+        else if(dzialanie == 4){
+            p.innerHTML = wynik+(a/b);
+          }
+        }
+      }
+  </script>
+</body>
+</html>

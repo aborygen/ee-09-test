@@ -1,0 +1,41 @@
+*{
+  font-family: Verdana;
+}
+header{
+  float: left;
+  height: 70px;
+  width: 30%;
+}
+header:first-child{
+  width: 70%;
+}
+section{
+  clear: both;
+  background-color: #B0BEC5;
+  height: 320px;
+  overflow: scroll;
+}
+footer{
+  clear: both;
+}
+header, footer{
+  background-color: #29434E;
+}
+.film{
+  float: left;
+  padding: 5px;
+  width: 226px;
+  height: 280px;
+}
+header, footer, h3{
+  color: white;
+}
+h3, h4{
+  margin: 0px;
+}
+h3{
+  background-color: #546E7A;
+}
+h4{
+  text-align: center;
+}
