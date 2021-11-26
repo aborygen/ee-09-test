@@ -11,6 +11,7 @@ header{
   width: 40%;
 }
 header:last-of-type{
+  color: unset;
   width: 20%;
 }
 .day{
@@ -21,8 +22,7 @@ header:last-of-type{
   margin: 5px;
   border: 1px solid #3CB371;
 }
-main,
-{
+main, footer{
   clear: both;
 }
 h6{
