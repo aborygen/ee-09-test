@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi fryzjerskie</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <section>
+        <a href="index.html"><h2>SALON FRYZJERSKI</h2></a>
+        <img src="obraz2.jpg" alt="Czesanie">
+    </section>
+    <nav>
+        <h2>MENU</h2>
+    </nav>
+    <nav>
+        <ol>
+            <li>
+                Strzyżenie
+                <ul>
+                    <li>krótkie</li>
+                    <li>średnie</li>
+                    <li>półdługie</li>
+                    <li>długie</li>
+                </ul>
+            </li>
+            <li>Czesanie</li>
+            <li>Koloryzacja</li>
+        </ol>
+    </nav>
+    <section>
+        <h3>Dziś promocja na strzyżenie włosów</h3>
+        <input type="radio" name="typ" id="typ" value="1"><label>Krótkie</label><br>
+        <input type="radio" name="typ" id="typ" value="2"><label>Średnie</label><br>
+        <input type="radio" name="typ" id="typ" value="3"><label>Półdługie</label><br>
+        <input type="radio" name="typ" id="typ" value="4"><label>Długie</label><br>
+        <button>Odkryj promocję</button>
+        <p id="wynik"></p>
+    </section>
+    <nav>
+        <img src="obraz1.jpg" alt="Fryzjer">
+    </nav>
+    <footer>
+        <p>Autor: Vojcik</p>
+    </footer>
+    <script>
+        document.querySelector('button').addEventListener('click',licz);
+
+        function licz(){
+            let v = document.querySelector('input[name="typ"]:checked').value;
+            if(v == 1){
+                document.getElementById('wynik').innerHTML = ("Cena strzyżeia: 25zł");
+            }
+            else if(v == 2){
+                document.getElementById('wynik').innerHTML = ("Cena strzyżeia: 30zł");
+            }
+            else if(v == 3){
+                document.getElementById('wynik').innerHTML = ("Cena strzyżeia: 40zł");
+            }
+            else{
+                document.getElementById('wynik').innerHTML = ("Cena strzyżeia: 50zł");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Zapytanie 1:
+    SELECT imie, nazwisko FROM kadra
+    WHERE stanowisko = 'fryzjer';
+Zapytanie 2:    
+    COUNT(*) AS ilosc_uslug_fryzjerskich FROM uslugi
+    WHERE rodzaj = 2
+Zapytanie 3:
+
+Zapytanie 4:
