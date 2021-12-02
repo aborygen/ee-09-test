@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hurtownia</title>
+  <link rel="stylesheet" href="styl4.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="hurtownia">
+  </header>
+  <header>
+    <a href="index.html">Strona główna</a>
+    <a href="zamowienia.html">Zamówienia</a>
+    <a href="blog.html">Blog o kawie</a>
+    <a href="http://gatunki-kawy.pl/" target="_blank">Odwiedź także</a>
+  </header>
+  <nav>
+    <h1>Hurtownia kawy</h1>
+  </nav>
+  <section>
+    <h2>Oferta</h2>
+    <ol>
+      <li>Kawa palona Arabica</li>
+      <li>Kawa palona Robusta</li>
+      <li>Kawa bezkofeinowa</li>
+      <li>Kawa zielona</li>
+    </ol>
+  </section>
+  <section>
+    <label for="kawa">Podaj numer kawy:</label>
+      <input type="number" name="kawa" id="kawa"><br>
+    <label for="waga">Podaj wagę w dekagramach</label>
+      <input type="number" name="waga" id="waga">
+    <button>Zamów</button>
+    <p></p>
+  </section>
+  <footer>
+    <span>Stronę przygotował: <b>Vojcik</b></span>
+  </footer>
+  <script>
+    document.querySelector('button').addEventListener('click', licz);
+
+    function licz(){
+      let kawa = document.getElementById('kawa').value;
+      let waga = document.getElementById('waga').value;
+      if(kawa == 1){
+        wypisz(waga*5);
+      }
+      else if(kawa == 2){
+        wypisz(waga*7);
+      }
+      else if(kawa == 3){
+        wypisz(waga*6);
+      }
+      else{
+        wypisz(0);
+      }
+    }
+    function wypisz(wynik){
+      document.querySelector('p').innerHTML = ("Koszt zamówienia wynosi: " + wynik + "zł");
+    }
+  </script>
+</body>
+</html>
