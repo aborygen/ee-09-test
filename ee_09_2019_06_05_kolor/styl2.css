@@ -1,0 +1,38 @@
+*{
+  font-family: Verdana;
+  color: #2F2F2F;
+}
+header{
+  float: left;
+  background-color: #DCDCDC;
+  height: 80px;
+  width: 15%;
+}
+header:first-of-type{
+  width: 55%;
+  text-align: center;
+}
+section{
+  float: left;
+  background-color: #808080;
+  height: 450px;
+  width: 70%;
+}
+section:first-of-type{
+  width: 30%;
+}
+footer{
+  clear: both;
+  background-color:#DCDCDC;
+  text-align: center;
+}
+h5{
+  color: #808080;
+  border: 1px solid #808080;
+  margin: 7px;
+  padding: 10px;
+  font-size: 80%;
+}
+input{
+  color: grey;
+}

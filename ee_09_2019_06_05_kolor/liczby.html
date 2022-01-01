@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Vojcik">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styl2.css">
+  <title>Ciągi liczbowe</title>
+</head>
+<body>
+  <header>
+    <h2>Poznaj Ciągi Liczbowe</h2>
+  </header>
+  <header>
+    <a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
+  </header>
+  <header>
+    <a href="fib.html"> <h5>Ciąg Fibonacciego</h5></a>
+  </header>
+  <header>
+    <img src="obraz1.png" alt="Fibonacci">
+  </header>
+  <section>
+    <ol>
+      <li>ciągi arytmetyczne</li>
+      <li>ciągi geometryczne</li>
+      <li>ciąg Fibonacciego</li>
+    </ol>
+  </section>
+  <section>
+    <h2>Generowanie ciągu arytmetycznego</h2>
+    <label for="a1">Pierwszy wyraz A1: </label>
+      <input type="number" name="a1" id="a1"><br>
+    <label for="r">Różnica ciągu R: </label>
+      <input type="number" name="r" id="r"><br>
+    <label for="n">Liczba wyrazów w ciągu N: </label>
+      <input type="number" name="n" id="n"><br>
+    <button onclick="generuj()">Generuj Ciąg</button>
+    <br>
+    <p id="wynik"></p>
+  </section>
+  <footer>
+    <p>Autor: Vojcik</p>
+  </footer>
+  <script>
+    function generuj(){
+      let a1 = Number(document.getElementById('a1').value);
+      let r = Number(document.getElementById('r').value);
+      let n = Number(document.getElementById('n').value);
+      let wynik ="";
+      if(n > 0){
+        for(i=1; i <= n; i++){
+        wynik = wynik +(a1+", ");
+        a1 = (a1+r);
+      }
+      document.getElementById('wynik').innerHTML = "Ciąg arytmetyczny zawiera wyrazy: "+wynik;
+    }
+  }
+  </script>
+</body>
+</html>
