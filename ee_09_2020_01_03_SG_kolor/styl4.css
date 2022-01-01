@@ -1,0 +1,43 @@
+*{
+  font-family: Garamond;
+}
+header, main{
+  background-color: rgb(95, 158, 160);
+}
+section, footer{
+  background-color: rgb(175, 238, 238);
+}
+header{
+  float: left;
+  color: yellow;
+  height: 90px;
+  width: 20%;
+  text-align: right;
+}
+header:nth-of-type(2){
+  width: 60%;
+  text-align: center;
+}
+section{
+  float: left;
+  width: 50%;
+  height: 250px;
+}
+main{
+  clear: both;
+  padding: 30px;
+}
+footer{
+  padding: 10px;
+}
+table, td , th{
+  border: 2px dotted green;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th{
+  background-color: green;
+  color: yellow;
+}
