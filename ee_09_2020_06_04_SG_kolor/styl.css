@@ -1,0 +1,46 @@
+*{
+  font-family: Garamond;
+}
+section{
+  float: left;
+  background-color: lavender;
+  width: 25%;
+}
+nav{
+  height: 500px;
+}
+nav:last-of-type{
+  height: 300px;
+}
+header, main{
+  float: left;
+  width: 75%;
+  text-align: center;
+  font-size: 200%;
+}
+header{
+  height: 150px;
+  background-color: indigo;
+  color: white;
+}
+main{
+  height: 650px;
+  background-color: lavender;
+}
+footer{
+  clear: both;
+  background-color: indigo;
+  color: white;
+  text-align: right;
+}
+ul{
+  list-style: square;
+}
+img{
+  padding: 5px;
+  margin: 10px;
+}
+img:hover{
+  padding: 4px;
+  border: 1px indigo solid;
+}

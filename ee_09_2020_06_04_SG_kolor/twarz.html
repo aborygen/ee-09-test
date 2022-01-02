@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Vojcik">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styl.css">
+  <title>Usługi kosmetyczne</title>
+</head>
+<body>
+  <section>
+    <nav>
+      <h2>W ofercie</h2>
+      <ul>
+        <li>
+          <a href="twarz.html">Zabiegi na twarz</a>
+            <ol>
+              <li>Piling</li>
+              <li>Maska</li>
+              <li>Regulacja brwi</li>
+            </ol>
+        </li>
+        <li>Masaż</li>
+        <li>Diety oczyszczające</li>
+      </ul>
+      <a href="index.html">Do strony głównej</a>
+    </nav>
+    <nav>
+      <img src="obraz1.jpg" alt="Kosmetyczka">
+    </nav>
+  </section>
+    <header>
+      <h1>Salon Kosmetyczny</h1>
+    </header>
+    <main>
+      <h2>Sprawdź cenę swojej wizyty</h2>
+      <input type="checkbox" name="usluga" id="Piling" value="45"><label for="Piling">Piling</label><br>
+      <input type="checkbox" name="usluga" id="Maska" value="30"><label for="Maska">Maska</label><br>
+      <input type="checkbox" name="usluga" id="MasazTwarzy" value="20"><label for="MasazTwarzy">Maska twarzy</label><br>
+      <input type="checkbox" name="usluga" id="RegulacjaBrwi" value="5"><label for="RegulacjaBrwi">Regulacja brwi</label><br>
+      <button>Sprawdź cenę</button><br><br>
+      <p id="wynik"></p>
+    </main>
+    <footer>
+      <p>Autor: Vojcik</p>
+    </footer>
+    <script>
+      document.querySelector('button').addEventListener('click', check);
+      function check(){
+        var input = document.getElementsByName("usluga");
+        var total = 0;
+          for (var i = 0; i < input.length; i++) {
+            if (input[i].checked) {
+              total += parseFloat(input[i].value);
+            }
+          }
+        document.getElementById('wynik').innerHTML = "Cena zabiegów: "+total;
+      }
+    </script>
+</body>
+</html>
