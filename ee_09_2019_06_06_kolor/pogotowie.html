@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Vojcik">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styl5.css">
+  <title>Pogotowie Ratunkowe</title>
+</head>
+<body>
+    <header>
+      <img src="obraz.jpg" alt="Pogotowie">
+    </header>
+    <header>
+      <h1>Pogotowie<br>Ratunkowe</h1>
+    </header>
+    <header>
+      <p>Kontakt:<br>022 222 11 333</p>
+    </header>
+    <main>
+      <h2>Dodaj nowe zgłoszenie</h2>
+      <form action="zgloszenie.php" method="post">
+        <label>Numer zespołu ratowniczego: </label><br>
+          <input type="number" name="ratownicy"><br>
+        <label>Numer dyspozytora: </label><br>
+          <input type="number" name="dyspozytor"><br>
+        <label>Adres: </label><br>
+          <input type="text" name="adres" size="100"><br>
+            <input type="reset" value="WYCZYŚĆ"><br>
+            <input type="submit" value="ZGŁOŚ">
+      </form>
+    </main>
+    <footer>
+      <h4>Numery alarmowe</h4>
+      <ul>
+        <li>999</li>
+        <li>112</li>
+      </ul>
+    </footer>
+    <footer>
+      <a href="kwerendy.txt" download>Pobierz kwerendy</a>
+    </footer>
+    <footer>
+      <p>Autor<br>Vojcik</p>
+    </footer>
+</body>
+</html>

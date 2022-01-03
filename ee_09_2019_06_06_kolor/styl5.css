@@ -1,0 +1,35 @@
+*{
+  font-family: Georgia;
+}
+header, footer{
+  float: left;
+  background-color: sienna;
+  color: white;
+  height: 150px;
+}
+header:first-of-type, footer:first-of-type{
+  width: 40%;
+}
+header:nth-of-type(2), footer:nth-of-type(2){
+  width: 50%;
+  font-size: 150%;
+}
+header:last-of-type, footer:last-of-type{
+  width: 10%;
+  text-align: center;
+}
+main{
+  clear: both;
+  background-color: tan;
+  padding: 100px;
+}
+a{
+  border: 1px sienna dashed;
+  background-color: tan;
+  color: sienna;
+  padding: 40px;
+  line-height: 150px;
+}
+li{
+  list-style: circle;
+}
