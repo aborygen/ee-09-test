@@ -1,0 +1,12 @@
+Zapytanie 1:
+  SELECT nazwa, potoczna FROM grzyby
+  WHERE jadalny = 1;
+Zapytanie 2:
+  SELECT g.nazwa, g.potoczna, r.nazwa AS rodzina FROM grzyby AS g
+  JOIN rodzina AS r ON g.rodzina_id = r.id
+  WHERE potrawy_id = 1
+Zapytanie 3:
+  SELECT nazwa_pliku, potoczna FROM grzyby;
+Zapytanie 4:
+  ALTER TABLE rodzina
+  ADD COLUMN opis varchar;

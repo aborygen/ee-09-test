@@ -19,7 +19,7 @@
             $sql = mysqli_query($con,$qst);
             while($row = mysqli_fetch_array($sql)){
                 echo $row[0].'. '.$row[1].', cena: '.$row[2].'<br>';
-            }       
+            }
         ?>
     </div>
     <div id="lewy">

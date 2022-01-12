@@ -1,0 +1,38 @@
+*{
+  font-family: Verdana;
+}
+aside{
+  width: 20%;
+}
+aside, header{
+  float: left;
+  background: sienna;
+  height: 100px;
+}
+header{
+  width: 80%;
+  color: orange;
+}
+section{
+  float: left;
+  background: burlywood;
+  height: 700px;
+  width: 70%;
+}
+section + section{
+  width: 30%;
+}
+footer{
+  clear: both;
+  background: sienna;
+  color: orange;
+  text-align: center;
+}
+img{
+  margin: 7px;
+  padding: 5px;
+  border: solid rosybrown;
+}
+img:hover{
+  border-color: maroon;
+}
