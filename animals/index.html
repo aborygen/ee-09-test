@@ -23,35 +23,32 @@
   <script>
     function show(num){
       var elems = document.querySelectorAll('img');
-      var index = 0, length = elems.length;
-      for (; index < length; index++){
-        elems[index].style.border = "none";
+      for (let i = 0; i < elems.length; i++){
+        elems[i].style.border = "none";
       }
       const border = "4px solid #0662cc";
-      if(num == 1){
-        document.querySelector('img[alt="Blu"]').style.border = border;
-        document.getElementById('line').innerHTML = "Papuga";
-        document.getElementById('caption').innerHTML = "Papużko, papużko, <br> Powiedz mi coś na uszko. <br> Nic nie powiem, boś ty plotkarz, <br> Powtórzysz każdemu, kogo spotkasz.";
-      }
-      else if(num == 2){
-        document.querySelector('img[alt="Garfield"]').style.border = border;
-        document.getElementById('line').innerHTML = "Kot";
-        document.getElementById('caption').innerHTML = "Kota nie da się do końca oswoić. <br> Kot swymi drogami zawsze chodzi. <br> Kot na cztery łapy spada. <br> Swoim mruczeniem bajki wieczorem opowiada. <br> Śpi i śni. A nam te sny do ucha opowiada.";
-      }
-      else if(num == 3){
-        document.querySelector('img[alt="Baltazar Gąbka"]').style.border = border;
-        document.getElementById('line').innerHTML = "Krokodyl";
-        document.getElementById('caption').innerHTML = 'Opo­wiem wam baj­kę o kro­ko­dy­lu: <br> Przed laty tylu a tylu <br> Żył pe­wien kro­ko­dyl w Nilu. <br> Raz w miej­scu upa­trzo­nym <br> Za­bił czło­wie­ka ogo­nem, <br> Ale zżarł tyl­ko po­ło­wę, <br> A więc koń­czy­ny i gło­wę, <br> Tu­łów na­to­miast za­ko­pał roz­trop­nie <br> I po­wie­dział: "To ju­tro się opchnie."';
-      }
-      else if(num == 4){
-        document.querySelector('img[alt="Pumba"]').style.border = border;
-        document.getElementById('line').innerHTML = "Dzik";
-        document.getElementById('caption').innerHTML = "Dzik jest dziki, dzik jest zły, <br> Dzik ma bardzo ostre kły. <br> Kto spotyka w lesie dzika, <br> Ten na drzewo szybko zmyka.";
-      }
-      else if(num == 5){
-        document.querySelector('img[alt="Scooby Doo"]').style.border = border;
-        document.getElementById('line').innerHTML = "Pies";
-        document.getElementById('caption').innerHTML = "Gdy Cię wróg zaatakuje, <br> Ja w mig gardło mu rozpruje ! <br> Jestem strasznie groźnym psem <br> I każdego wroga zjem ! <br> Na mój widok każdy znika, <br> Bo mam duszę wojownika ! <br> Yorku, przecież jesteś mały ! <br> Cóż, nikt nie jest doskonały !";
+      switch (num){
+        case 1: document.querySelector('img[alt="Blu"]').style.border = border;
+                document.getElementById('line').innerHTML = "Papuga";
+                document.getElementById('caption').innerHTML = "Papużko, papużko, <br> Powiedz mi coś na uszko. <br> Nic nie powiem, boś ty plotkarz, <br> Powtórzysz każdemu, kogo spotkasz.";
+                break;
+        case 2: document.querySelector('img[alt="Garfield"]').style.border = border;
+                document.getElementById('line').innerHTML = "Kot";
+                document.getElementById('caption').innerHTML = "Kota nie da się do końca oswoić. <br> Kot swymi drogami zawsze chodzi. <br> Kot na cztery łapy spada. <br> Swoim mruczeniem bajki wieczorem opowiada. <br> Śpi i śni. A nam te sny do ucha opowiada.";
+                break;
+        case 3: document.querySelector('img[alt="Baltazar Gąbka"]').style.border = border;
+                document.getElementById('line').innerHTML = "Krokodyl";
+                document.getElementById('caption').innerHTML = 'Opo­wiem wam baj­kę o kro­ko­dy­lu: <br> Przed laty tylu a tylu <br> Żył pe­wien kro­ko­dyl w Nilu. <br> Raz w miej­scu upa­trzo­nym <br> Za­bił czło­wie­ka ogo­nem, <br> Ale zżarł tyl­ko po­ło­wę, <br> A więc koń­czy­ny i gło­wę, <br> Tu­łów na­to­miast za­ko­pał roz­trop­nie <br> I po­wie­dział: "To ju­tro się opchnie."';
+                break;
+        case 4: document.querySelector('img[alt="Pumba"]').style.border = border;
+                document.getElementById('line').innerHTML = "Dzik";
+                document.getElementById('caption').innerHTML = "Dzik jest dziki, dzik jest zły, <br> Dzik ma bardzo ostre kły. <br> Kto spotyka w lesie dzika, <br> Ten na drzewo szybko zmyka.";
+                break;
+        case 5: document.querySelector('img[alt="Scooby Doo"]').style.border = border;
+                document.getElementById('line').innerHTML = "Pies";
+                document.getElementById('caption').innerHTML = "Gdy Cię wróg zaatakuje, <br> Ja w mig gardło mu rozpruje ! <br> Jestem strasznie groźnym psem <br> I każdego wroga zjem ! <br> Na mój widok każdy znika, <br> Bo mam duszę wojownika ! <br> Yorku, przecież jesteś mały ! <br> Cóż, nikt nie jest doskonały !";
+                break;
+        default: break;
       }
     }
   </script>

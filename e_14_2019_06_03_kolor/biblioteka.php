@@ -32,25 +32,26 @@
       rok urodzenia: <input type="number" name="rok" value=""> <br>
       <input type="submit" value="DODAJ" name="wyslano">
         <?php
-          @$imie = strval($_POST['imie']);
-          @$nazwisko = strval($_POST['nazwisko']);
-          @$rok = strval($_POST['rok']);
           if(isset($_POST['wyslano'])){
-            if($imie == "" || $nazwisko == "" || $rok == ""){
+            if(!empty($_POST['imie'])){
+              $imie = strval($_POST['imie']);
+            }
+            if(!empty($_POST['nazwisko'])){
+              $imie = strval($_POST['nazwisko']);
+            }
+            if(!empty($_POST['rok'])){
+              $imie = strval($_POST['rok']);
+            }
+            else{
               echo "<br> Proszę wypełnić wszystkie pola";
               mysqli_close($con);
             }
-            else{
               echo "<br> Czytelnik: ".$imie." ".$nazwisko." został dodany do bazy danych";
-              $kod = strtoupper(substr($imie, 0, 2)."".substr($nazwisko, 0, 2)."".substr($rok, -2, 2));
-              $qst2 = "INSERT INTO czytelnicy(imie, nazwisko, kod) VALUES ('$imie','$nazwisko','$kod')";
-              mysqli_query($con, $qst2);
-              mysqli_close($con);
+                $kod = strtoupper(substr($imie, 0, 2)."".substr($nazwisko, 0, 2)."".substr($rok, -2, 2));
+                $qst2 = "INSERT INTO czytelnicy(imie, nazwisko, kod) VALUES ('$imie','$nazwisko','$kod')";
+                  mysqli_query($con, $qst2);
+                  mysqli_close($con);
             }
-          }
-          else{
-            mysqli_close($con);
-          }
           ?>
     </form>
   </div>

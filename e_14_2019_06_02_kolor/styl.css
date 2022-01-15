@@ -1,0 +1,50 @@
+header{
+  background: #62AFFF;
+  height: 80px;
+  font-size: 120%;
+  text-align: center;
+}
+section{
+  float: left;
+  background: #44D6E8;
+  height: 450px;
+  width: 30%;
+  font-size: 120%;
+}
+/* pominięcie pierwszej sekcji */
+section + section{
+  text-align: center;
+}
+section:nth-of-type(2){
+  background: unset;
+  width: 40%;
+}
+footer{
+  clear: both;
+  background: #62AFFF;
+  height: 50px;
+  text-align: center;
+}
+table{
+  margin-left: 50px;
+  border-collapse: collapse;
+}
+table td{
+  border: 1px solid yellow;
+  padding: 20px;
+  text-align: center;
+  font-size: 120%;
+}
+tr:hover{
+  color: yellow;
+}
+img,
+h3{
+  margin-top: 100px;
+}
+img{
+  float: left;
+}
+input{
+  margin-top: 10px;
+}
